@@ -57,24 +57,6 @@
 
   <audio id="scream-sound" src="https://www.myinstants.com/media/sounds/movie_1.mp3" preload="auto"></audio>
 
-  <script>
-    function triggerJumpscare() {
-      const jumpscare = document.getElementById("jumpscare");
-      const sound = document.getElementById("scream-sound");
-
-      // Munculkan jumpscare
-      jumpscare.style.display = "flex";
-
-      // Mainkan suara
-      sound.play().catch(e => {
-        alert("Klik dulu di halaman agar suara bisa diputar!");
-      });
-
-      // Hilangkan jumpscare setelah 3 detik
-      setTimeout(() => {
-        jumpscare.style.display = "none";
-      }, 3000);
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
