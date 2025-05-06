@@ -1,6 +1,6 @@
 function triggerJumpscare() {
   const jumpscare = document.getElementById("jumpscare");
-  const sound = document.getElementById("scream-sound");
+  const sound = document.getElementById("sound");
 
   // Tampilkan jumpscare
   jumpscare.style.display = "flex";
