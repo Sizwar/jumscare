@@ -40,10 +40,10 @@
       z-index: 9999;
     }
 
-    #jumpscare img {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
+    #jumpscare video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
     }
   </style>
 </head>
@@ -51,10 +51,13 @@
   <h1>Klik tombol ini!</h1>
   <button onclick="triggerJumpscare()">Klik Aku</button>
 
-  <div id="jumpscare">
-    <img src="video.mp4" alt="SCREAM" />
-  </div>
-
+<div id="jumpscare">
+  <video id="jumpscare-video" autoplay>
+    <source src="video.mp4" type="video/mp4">
+    Browser kamu nggak dukung video.
+  </video>
+</div>
+  
   <audio id="sound" src="audio.mp3" preload="auto"></audio>
 
   <script src="script.js"></script>
