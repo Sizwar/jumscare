@@ -1,5 +1,5 @@
 function triggerJumpscare() {
-  const jumpscare = document.getElementById("jumpscare");
+  const jumpscare = document.getElementById("jumpscare-video");
   const sound = document.getElementById("sound");
 
   // Tampilkan jumpscare
